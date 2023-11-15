@@ -1,11 +1,5 @@
-# Khalifa
-#### Juan Manuel Sierra Albrecht
-### [**Webpage LIVE**](https://juansie96.github.io/khalifa)
+  Pagina web responsiva para el ayuntamiento de Cuilapam de Guerrero
 
----
-
-  Pagina web responsiva realizada para la empresa Khalifa (Ingeniería & Construccion). 
-  
   ### Tecnologias utilizadas
   
     1. HTML
@@ -16,3 +10,4 @@
     6. AOS Library (Animations)
     7. Google Maps API
     8. External plugins
+
