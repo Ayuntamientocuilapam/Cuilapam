@@ -1,0 +1,260 @@
+
+#navbar {
+  z-index: 1;
+  width: 100%;
+  background-color: rgb(228, 102, 29);
+  position: fixed;
+}
+
+
+#navbar .navbaIcon {
+  font-weight: bold;
+  margin: 0 10px;
+  color: grey;
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 2px black; 
+
+}
+
+#navbar .navbar-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#navbar .navbar-toggler {
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0.411);
+}
+
+#navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#navbar .nav-item {
+  position: relative;
+}
+
+#navbar .nav-item:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 48px;
+  border-bottom: 5px solid #009bc5;
+  -webkit-animation: border-bottom 0.4s linear;
+          animation: border-bottom 0.4s linear;
+}
+
+
+.imagen-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+
+
+@-webkit-keyframes border-bottom {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 20%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes border-bottom {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 20%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+#navbar .nav-link {
+  font-weight: bold;
+  margin: 0 10px;
+  color: #8b0000;
+  font-size: 1.4rem;
+  text-shadow: 2px 2px 2px black;
+  
+}
+
+#navbar .nav-link:hover {
+  font-weight: 400;
+}
+
+
+.slide {
+  position: relative;
+}
+
+.slide img.superpuesta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Asegura que la imagen superpuesta esté encima de la imagen de fondo */
+  /* Ajusta las dimensiones y otros estilos según tus necesidades */
+}
+.gobierno a {
+  text-decoration: none; /* Elimina la decoración de subrayado en el enlace */
+  color: inherit; /* Hereda el color del texto de los elementos padres */
+  /* Agrega cualquier otro estilo necesario para el enlace */
+}
+
+.gobierno a:hover {
+  /* Agrega estilos de hover para el enlace si es necesario */
+}
+
+#gobiernos {
+  text-align: center;
+}
+
+#gobiernos .gobierno {
+  padding: 30px 0;
+}
+
+#gobiernos h5 {
+  margin: 15px 0;
+}
+
+#gobiernos p {
+  width: 50%;
+  margin: auto;
+}
+
+#gobiernos > div:nth-child(even) {
+  color: #ffffff;
+  background:rgb(228, 102, 29);
+  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#ff8c00), to(#ff8c00));
+  background: linear-gradient(to right, #ff8c00, #ff8c00);
+  background: -webkit-linear-gradient(to right, #ff8c00, #ff8c00);
+}
+
+#gobiernos img {
+  width: 4.5rem;
+}
+
+#gobiernos i {
+  font-size: 3rem;
+}
+
+#steel-frame .parallax-container {
+  margin: 130px 0;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#steel-frame .parallax-container h2 {
+  color: #fff;
+  font-weight: 400;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#steel-frame .parallax-container img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+#steel-frame .steel-frame-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-weight: 300;
+}
+
+#steel-frame .steel-frame-info .info {
+  width: 50%;
+}
+
+#steel-frame .steel-frame-info .steel-frame-img {
+  width: 30%;
+}
+
+#steel-frame .steel-frame-info .steel-frame-inner-img {
+  display: none;
+}
+
+#steel-frame .steel-frame-info h2 {
+  margin-bottom: 40px;
+}
+
+#steel-frame .ventajas-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 800px;
+  margin: 130px auto;
+  border-radius: 2rem;
+  padding: 30px;
+  color: #fff;
+  background: #009bc5;
+}
+
+#steel-frame .ventajas-card h3 {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+#steel-frame .ventajas-card .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+  margin: 30px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#steel-frame .ventajas-card .item i {
+  font-size: 20px;
+  color: #00f800;
+}
+
+#steel-frame .ventajas-card .item span {
+  font-weight: 400;
+}
+
+#steel-frame .ventajas-card .item p {
+  margin-left: 15px;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
