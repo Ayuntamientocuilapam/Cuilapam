@@ -42,4 +42,93 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*# sourceMappingURL=reset.css.map */
+
+/*organigrama*/
+
+/*linea de cabildo*/
+
+.contenedor-naranja {
+  background-color: #ffa500; /* Color naranja */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #fff; /* Texto blanco */
+  margin-bottom: 20px;
+}
+
+/*presidente*/
+.presidente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Alinea el texto al centro */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.foto {
+  width: 100%;
+  max-width: 300px; /* Ajusta el ancho máximo de la foto según tus necesidades */
+  text-align: center; /* Alinea la imagen al centro */
+  margin-bottom: 10px;
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+.nombre {
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+.cargo {
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.presidente:hover .foto img  {
+  transform: scale(1.1); /* Aplica la transformación al pasar el ratón sobre la persona */
+}
+.presidente:hover .nombre {
+  transform: scale(1.1); /* Aplica la transformación al pasar el ratón sobre la persona */
+}
+.presidente:hover .cargo {
+  transform: scale(1.1); /* Aplica la transformación al pasar el ratón sobre la persona */
+}
+
+
+.organigrama {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.persona {
+  position: relative;
+  margin: 0 20px;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.persona:hover {
+  transform: scale(1.2);
+}
+
+.nombre {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.cargo {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+/*fin organigrama*/
+
