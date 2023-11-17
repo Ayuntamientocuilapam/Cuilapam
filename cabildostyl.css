@@ -258,3 +258,165 @@
   font-weight: 300;
   font-size: 1.1rem;
 }
+/*organigrama*/
+
+/*linea de cabildo*/
+
+.contenedor-naranja {
+  background-color: #f07518; /* Color naranja */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #fff; /* Texto blanco */
+  margin-bottom: 20px;
+}
+
+/*presidente*/
+.presidente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Alinea el texto al centro */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.foto {
+  width: 100%;
+  max-width: 300px; /* Ajusta el ancho máximo de la foto según tus necesidades */
+  text-align: center; /* Alinea la imagen al centro */
+  margin-bottom: 10px;
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+.nombre {
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+.cargo {
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.presidente:hover .foto img  {
+  transform: scale(1.1); /* Aplica la transformación al pasar el ratón sobre la persona */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.presidente:hover .nombre {
+  transform: scale(1.1); /* Aplica la transformación al pasar el ratón sobre la persona */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.presidente:hover .cargo {
+  transform: scale(1.1); /* Aplica la transformación al pasar el ratón sobre la persona */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/*
+.organigrama {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.persona {
+  position: relative;
+  margin: 0 20px;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.persona:hover {
+  transform: scale(1.2);
+}
+
+.nombre {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.cargo {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+*/
+
+.organigrama {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 30px;
+} 
+.persona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  width: calc(33.33% - 20px); /* Aproximadamente un tercio del ancho, considerando márgenes */
+  box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+.foto {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nombre {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.cargo {
+  color: #555;
+}
+
+.persona:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/*fin organigrama*/
+
+/*fotter*/
+
+footer {
+  background-color: #f07518; 
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+/*header*/
+header {
+  width: 100%;
+  text-align: center;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
