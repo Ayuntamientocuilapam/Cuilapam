@@ -95,7 +95,7 @@ header #background-image {
 #navbar {
   z-index: 1;
   width: 100%;
-  background-color: rgb(228, 102, 29);
+  background-color: #f07518;
   position: fixed;
 }
 
@@ -181,7 +181,7 @@ header #background-image {
 #navbar .nav-link {
   font-weight: bold;
   margin: 0 10px;
-  color: #8b0000;
+  color: grey;
   font-size: 1.4rem;
   text-shadow: 2px 2px 2px black;
   
