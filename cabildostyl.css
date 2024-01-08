@@ -40,6 +40,7 @@
   position: absolute;
   width: 100%;
   top: 48px;
+  left: 10px;
   border-bottom: 5px solid #009bc5;
   -webkit-animation: border-bottom 0.4s linear;
           animation: border-bottom 0.4s linear;
@@ -88,7 +89,7 @@
 #navbar .nav-link {
   font-weight: bold;
   margin: 0 10px;
-  color: #8b0000;
+  color: grey;
   font-size: 1.4rem;
   text-shadow: 2px 2px 2px black;
   
@@ -99,26 +100,6 @@
 }
 
 
-.slide {
-  position: relative;
-}
-
-.slide img.superpuesta {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1; /* Asegura que la imagen superpuesta esté encima de la imagen de fondo */
-  /* Ajusta las dimensiones y otros estilos según tus necesidades */
-}
-.gobierno a {
-  text-decoration: none; /* Elimina la decoración de subrayado en el enlace */
-  color: inherit; /* Hereda el color del texto de los elementos padres */
-  /* Agrega cualquier otro estilo necesario para el enlace */
-}
-
-.gobierno a:hover {
-  /* Agrega estilos de hover para el enlace si es necesario */
-}
 
 #gobiernos {
   text-align: center;
