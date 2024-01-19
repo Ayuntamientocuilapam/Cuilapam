@@ -37,18 +37,29 @@ body {
 h2 {
   font-size: 3rem;
   letter-spacing: 1px;
+  
 }
 
 h5 {
   font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+  color:   black ;
+
 }
 
 p {
   line-height: 1.5rem;
+
+  margin: 0 20px;
+  color: #000000;
 }
 
 .section-container {
   width: 100%;
+}
+b{
+  text-align: center;
 }
 
 
@@ -64,7 +75,7 @@ p {
 #navbar .navbaIcon {
   font-weight: bold;
   margin: 0 10px;
-  color: grey;
+  color: rgb(255, 255, 255);
   font-size: 1.9rem;
   text-shadow: 2px 2px 2px black; 
 
@@ -147,7 +158,7 @@ p {
 #navbar .nav-link {
   font-weight: bold;
   margin: 0 10px;
-  color: grey;
+  color: rgb(255, 255, 255);
   font-size: 1.4rem;
   text-shadow: 2px 2px 2px black;
   
@@ -163,12 +174,13 @@ p {
   text-decoration: none; /* Elimina la decoración de subrayado en el enlace */
   color: inherit; /* Hereda el color del texto de los elementos padres */
   /* Agrega cualquier otro estilo necesario para el enlace */
+
 }
 
 
 
 #gobiernos {
-  text-align: center;
+  text-align: justify;
 }
 
 #gobiernos .gobierno {
@@ -189,7 +201,7 @@ p {
   background:rgb(228, 102, 29);
   /* fallback for old browsers */
   background: -webkit-gradient(linear, left top, right top, from(#ff8c00), to(#ff8c00));
-  background: linear-gradient(to right, #646363, #646363);
+  background: linear-gradient(to right, #009bc5, #009bc5);
   background: -webkit-linear-gradient(to right, #fc9518, #fc9518);
 }
 
@@ -218,7 +230,9 @@ footer {
   padding: 10px;
 }
 
-
+.redes-container{
+  text-align: center;
+}
 /*header*/
 header {
   width: 100%;

@@ -478,7 +478,7 @@ header #background-image {
   display: flex;
   background: #009bc5;
   background: -webkit-gradient(linear, left top, right top, from(#ff8c00), to(#ff8c00));
-  background: linear-gradient(to right,  #ff8c00, #ff8c00);
+  background: linear-gradient(to right,  #dfe6e6, #dfe6e6);
   background: -webkit-linear-gradient(to right, #ff8c00, #ff8c00);
 }
 
@@ -558,11 +558,11 @@ footer {
   padding: 20px 0;
   font-weight: 400;
   font-size: 14px;
-  color: #fff;
+  color: #ffffff;
   border-top: 1px solid #ccc;
   background: #009bc5;
   background: -webkit-gradient(linear, left top, right top, from(#ff8c00), to(#ff8c00));
-  background: linear-gradient(to right, rgb(124, 122, 122), #757472);
+  background: linear-gradient(to right, #ff8c00, #ff8c00);
   background: -webkit-linear-gradient(to right, #ff8c00, #ff8c00);
 }
 
@@ -572,7 +572,7 @@ footer .redes-container {
 }
 
 footer a {
-  color: #fff;
+  color: #000000;
 }
 
 footer a:hover {
@@ -581,7 +581,7 @@ footer a:hover {
 
 footer i {
   font-size: 26px;
-  color: #fff;
+  color: #000000;
   margin: 10px;
 }
 
