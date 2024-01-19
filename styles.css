@@ -95,7 +95,7 @@ header #background-image {
 #navbar {
   z-index: 1;
   width: 100%;
-  background-color: #f07518;
+  background-color: #ff8c00;
   position: fixed;
 }
 
@@ -103,7 +103,7 @@ header #background-image {
 #navbar .navbaIcon {
   font-weight: bold;
   margin: 0 10px;
-  color: grey;
+  color: rgb(124, 122, 122);
   font-size: 1.9rem;
   text-shadow: 2px 2px 2px black; 
 
@@ -181,9 +181,9 @@ header #background-image {
 #navbar .nav-link {
   font-weight: bold;
   margin: 0 10px;
-  color: grey;
+  color: rgb(124, 122, 122);
   font-size: 1.4rem;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 1px 1px 1px black;
   
 }
 
@@ -231,12 +231,12 @@ header #background-image {
 }
 
 #gobiernos > div:nth-child(even) {
-  color: #ffffff;
+  color: #080808;
   background:rgb(228, 102, 29);
   /* fallback for old browsers */
   background: -webkit-gradient(linear, left top, right top, from(#ff8c00), to(#ff8c00));
-  background: linear-gradient(to right, #ff8c00, #ff8c00);
-  background: -webkit-linear-gradient(to right, #ff8c00, #ff8c00);
+  background: linear-gradient(to right, #858483, #858483);
+  background: -webkit-linear-gradient(to right, #858483, #ff8c00);
 }
 
 #gobiernos img {
@@ -478,7 +478,7 @@ header #background-image {
   display: flex;
   background: #009bc5;
   background: -webkit-gradient(linear, left top, right top, from(#ff8c00), to(#ff8c00));
-  background: linear-gradient(to right, #ff8c00, #ff8c00);
+  background: linear-gradient(to right,  #ff8c00, #ff8c00);
   background: -webkit-linear-gradient(to right, #ff8c00, #ff8c00);
 }
 
@@ -486,7 +486,7 @@ header #background-image {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: #fff;
+  color: #080808;
   width: 25%;
 }
 
@@ -503,7 +503,7 @@ header #background-image {
 }
 
 #contacto i {
-  color: #fff;
+  color: #080808;
 }
 
 #contacto form {
@@ -512,7 +512,7 @@ header #background-image {
 }
 
 #contacto form .input-field label {
-  color: #ddd;
+  color: #080808;
 }
 
 #contacto form .input-field input[type="email"],
@@ -521,8 +521,8 @@ header #background-image {
 #contacto form .input-field textarea {
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: #ddd;
-  border-bottom: 1px solid #ddd;
+  color: #080808;
+  border-bottom: 1px solid #080808;
 }
 
 #contacto form .input-field input[type="email"]:focus,
@@ -562,7 +562,7 @@ footer {
   border-top: 1px solid #ccc;
   background: #009bc5;
   background: -webkit-gradient(linear, left top, right top, from(#ff8c00), to(#ff8c00));
-  background: linear-gradient(to right, #ff8c00, #ff8c00);
+  background: linear-gradient(to right, rgb(124, 122, 122), #757472);
   background: -webkit-linear-gradient(to right, #ff8c00, #ff8c00);
 }
 

@@ -56,7 +56,7 @@ p {
 #navbar {
   z-index: 1;
   width: 100%;
-  background-color: rgb(228, 102, 29);
+  background-color: #ff8c00;
   position: fixed;
 }
 
@@ -189,8 +189,8 @@ p {
   background:rgb(228, 102, 29);
   /* fallback for old browsers */
   background: -webkit-gradient(linear, left top, right top, from(#ff8c00), to(#ff8c00));
-  background: linear-gradient(to right, #ff8c00, #ff8c00);
-  background: -webkit-linear-gradient(to right, #ff8c00, #ff8c00);
+  background: linear-gradient(to right, #646363, #646363);
+  background: -webkit-linear-gradient(to right, #fc9518, #fc9518);
 }
 
 
@@ -212,7 +212,7 @@ p {
 /*fotter*/
 
 footer {
-  background-color: #f07518; 
+  background-color: #ff8c00; 
   color: white;
   text-align: center;
   padding: 10px;

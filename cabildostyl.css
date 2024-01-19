@@ -2,7 +2,7 @@
 #navbar {
   z-index: 1;
   width: 100%;
-  background-color: rgb(228, 102, 29);
+  background-color: #ff8c00;
   position: fixed;
 }
 
@@ -244,7 +244,7 @@
 /*linea de cabildo*/
 
 .contenedor-naranja {
-  background-color: #f07518; /* Color naranja */
+  background-color: #ff8c00; /* Color naranja */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -384,7 +384,7 @@
 /*fotter*/
 
 footer {
-  background-color: #f07518; 
+  background-color: #ff8c00; 
   color: white;
   text-align: center;
   padding: 10px;
