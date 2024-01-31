@@ -1,0 +1,423 @@
+
+#navbar {
+  z-index: 1;
+  width: 100%;
+  background-color: #ff8c00;
+  position: fixed;
+}
+
+
+#navbar .navbaIcon {
+  font-weight: bold;
+  margin: 0 10px;
+  color: rgb(255, 255, 255);
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 2px black; 
+
+}
+
+#navbar .navbar-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#navbar .navbar-toggler {
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0.411);
+}
+
+#navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#navbar .nav-item {
+  position: relative;
+}
+
+#navbar .nav-item:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 48px;
+  left: 10px;
+  border-bottom: 5px solid #009bc5;
+  -webkit-animation: border-bottom 0.4s linear;
+          animation: border-bottom 0.4s linear;
+}
+
+
+.imagen-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+
+
+@-webkit-keyframes border-bottom {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 20%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes border-bottom {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 20%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+#navbar .nav-link {
+  font-weight: bold;
+  margin: 0 10px;
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+  
+  
+}
+
+#navbar .nav-link:hover {
+  font-weight: 400;
+}
+
+
+
+#gobiernos {
+  text-align: center;
+}
+
+#gobiernos .gobierno {
+  padding: 30px 0;
+}
+
+#gobiernos h5 {
+  margin: 15px 0;
+}
+
+#gobiernos p {
+  width: 50%;
+  margin: auto;
+}
+
+#gobiernos > div:nth-child(even) {
+  color: #ffffff;
+  background:rgb(228, 102, 29);
+  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#ff8c00), to(#ff8c00));
+  background: linear-gradient(to right, #ff8c00, #ff8c00);
+  background: -webkit-linear-gradient(to right, #ff8c00, #ff8c00);
+}
+
+#gobiernos img {
+  width: 4.5rem;
+}
+
+#gobiernos i {
+  font-size: 3rem;
+}
+
+#steel-frame .parallax-container {
+  margin: 130px 0;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#steel-frame .parallax-container h2 {
+  color: #fff;
+  font-weight: 400;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#steel-frame .parallax-container img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+#steel-frame .steel-frame-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-weight: 300;
+}
+
+#steel-frame .steel-frame-info .info {
+  width: 50%;
+}
+
+#steel-frame .steel-frame-info .steel-frame-img {
+  width: 30%;
+}
+
+#steel-frame .steel-frame-info .steel-frame-inner-img {
+  display: none;
+}
+
+#steel-frame .steel-frame-info h2 {
+  margin-bottom: 40px;
+}
+
+#steel-frame .ventajas-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 800px;
+  margin: 130px auto;
+  border-radius: 2rem;
+  padding: 30px;
+  color: #fff;
+  background: #009bc5;
+}
+
+#steel-frame .ventajas-card h3 {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+#steel-frame .ventajas-card .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+  margin: 30px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#steel-frame .ventajas-card .item i {
+  font-size: 20px;
+  color: #00f800;
+}
+
+#steel-frame .ventajas-card .item span {
+  font-weight: 400;
+}
+
+#steel-frame .ventajas-card .item p {
+  margin-left: 15px;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+/*organigrama*/
+
+/*linea de cabildo*/
+
+.contenedor-naranja {
+  background-color: #ff8c00; /* Color naranja */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #fff; /* Texto blanco */
+  margin-bottom: 20px;
+}
+
+/*presidente*/
+.presidente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Alinea el texto al centro */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.foto {
+  width: 100%;
+  max-width: 300px; /* Ajusta el ancho máximo de la foto según tus necesidades */
+  text-align: center; /* Alinea la imagen al centro */
+  margin-bottom: 10px;
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+.nombre {
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+.cargo {
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.presidente:hover .foto img  {
+  transform: scale(1.1); /* Aplica la transformación al pasar el ratón sobre la persona */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.presidente:hover .nombre {
+  transform: scale(1.1); /* Aplica la transformación al pasar el ratón sobre la persona */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.presidente:hover .cargo {
+  transform: scale(1.1); /* Aplica la transformación al pasar el ratón sobre la persona */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/*
+.organigrama {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.persona {
+  position: relative;
+  margin: 0 20px;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.persona:hover {
+  transform: scale(1.2);
+}
+
+.nombre {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.cargo {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+*/
+
+.organigrama {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 30px;
+} 
+.persona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  width: calc(33.33% - 20px); /* Aproximadamente un tercio del ancho, considerando márgenes */
+  box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+.foto {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nombre {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.cargo {
+  color: #555;
+}
+
+.persona:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/*fin organigrama*/
+
+/*fotter*/
+
+footer {
+  background-color: #ff8c00; 
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+/*header*/
+header {
+  width: 100%;
+  text-align: center;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+.card-title {
+  padding: 20px 0 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #0BAC87;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body{
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+ 	 text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  -ms-overflow-style: scrollbar;
+  background-color: #e7eaeb;
+  color: #616f77;
+}

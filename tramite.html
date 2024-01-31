@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuilapam</title>
+
+    <!-- FONT AWESOME KIT --->
+    <script src="https://kit.fontawesome.com/03e7517ade.js" crossorigin="anonymous"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./tramitesyservicios.css">
+    <link href="./bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="section-container">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+            <a class="navbaIcon">CUILÁPAM DE GUERRERO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-right" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br><br><br>
+    <header>
+        <img src="assets\imgs\img2.png" alt="Imagen de encabezado">
+    </header>
+
+    <!-- organigrama -->
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-6">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">FORMULARIO DE CITAS</h5>
+                        <br><br>
+
+                        <!-- General Form Elements -->
+                        <form >
+                            <div class="row mb-3">
+                              <label for="name" class="col-sm-2 col-form-label">Nombre</label>
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control">
+                              </div>
+                            </div>
+            
+                            <div class="row mb-3">
+                              <label for="email" class="col-sm-2 col-form-label">Correo</label>
+                              <div class="col-sm-10">
+                                <input type="email" class="form-control">
+                              </div>
+                            </div>
+            
+                            <div class="row mb-3">
+                              <label for="number" class="col-sm-2 col-form-label">Numero</label>
+                              <div class="col-sm-10">
+                                <input type="number" class="form-control">
+                              </div>
+                            </div>
+            
+                            <div class="row mb-3">
+                              <label for="date" class="col-sm-2 col-form-label">Fecha</label>
+                              <div class="col-sm-10">
+                                <input type="date" class="form-control">
+                              </div>
+                            </div>
+            
+                            <div class="row mb-3">
+                              <label for="time" class="col-sm-2 col-form-label">Hora</label>
+                              <div class="col-sm-10">
+                                <input type="time" class="form-control">
+                              </div>
+                            </div>
+            
+            
+                            <div class="row mb-3">
+                                <label for="departamento" class="col-sm-2 col-form-label">Departamento</label>
+                                <div class="col-sm-10">
+                                <select id="selectDepartamento" class="form-select" aria-label="Default select example">                                     
+                                  <option value="0">Municipal</option>
+                                  <option value="1">Hacienda</option>
+                                  <option value="2">Servicio Militar</option>
+                                  <option value="3">CASA DEL ADULTO MAYOR</option>
+                                  <option value="4">Panteones</option>
+                                  <option value="5">REGISTRO CIVIL</option>
+                                  <option value="6">DESARROLLO URBANO</option>
+                                  <option value="7">REGIDURÍA DE MERCADOS</option>
+                                  
+                                </select>
+                              </div>
+                            </div>
+            
+                           <div class="row mb-3">
+                                <label for="tramite" class="col-sm-2 col-form-label">Tramite o servicios</label>
+                                <div class="col-sm-10">
+                                 <select id="selectTramite" class="form-select" aria-label="Default select example">                                  
+                                  <option value="0">Constancias</option>
+                                  <option value="1">OPERACIONES CON/SIN BEBIDAS </option>
+                                  <option value="2">Cartilla del servicio militar</option>
+                                  <option value="3">Inscripcion a la instancia de día </option>
+                                  <option value="3">Solicitud de aparatos ortopedicos</option>
+                                  <option value="3">Inscripción al programa alimentario del DIF estatal</option>
+                                  <option value="4">INHUMACIÓN</option>
+                                  <option value="4">COMPOSTURA</option>
+                                  <option value="5">REGISTRO DE BEBES</option>
+                                  <option value="5">ACTA DE DEFUNCION</option>
+                                  <option value="5">Copias certificadas</option>
+                                  <option value="6">Alineamientos</option>
+                                  <option value="6">Subdivisión</option>
+                                  <option value="6">Obra menor</option>
+                                  <option value="6">Obra mayor</option>
+                                  <option value="6">Número oficial</option>
+                                  <option value="6">Fusiones </option>
+                                  <option value="6">Asignación de nombre de calle</option>
+                                  <option value="6">Uso de suelo</option>
+                                 
+                                </select>
+                              </div>
+                            </div>
+            
+                            <div class="row mb-3">
+                              <label class="col-sm-2 col-form-label">enviar</label>
+                              <div class="col-sm-10">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                              </div>
+                            </div>
+            
+                          </form><!-- End General Form Elements -->
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="documentosContainer" class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Documentos descargables</h5>
+                        <!-- Advanced Form Elements -->
+                        <form id="documentosForm">
+                            <a href="assets\documents/TRÁMITES HACIENDA.docx" data-departamento="1" data-tramite="1" class="boton-descarga" download="TRÁMITES HACIENDA.docx">Bebidas</a>
+                            <a href="assets\documents/generales constancias y requisitos.docx" data-departamento="0" data-tramite="0" class="boton-descarga" download="generales constancias y requisitos.docx">Constancias</a>
+                            <!-- Agrega más enlaces con atributos data-departamento y data-tramite según tus necesidades -->
+                        </form><!-- End Advanced Form Elements -->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Agrega el siguiente script JavaScript -->
+    <script>
+        $(document).ready(function () {
+            // Ocultar el contenedor de documentos al cargar la página
+            $('#documentosContainer').hide();
+    
+            // Manejar el evento de cambio en el select de departamento
+            $('#selectDepartamento').on('change', function () {
+                filtrarDocumentos();
+            });
+    
+            // Manejar el evento de cambio en el select de tramite
+            $('#selectTramite').on('change', function () {
+                filtrarDocumentos();
+            });
+    
+            function filtrarDocumentos() {
+                // Obtener los valores seleccionados
+                var selectedDepartamento = $('#selectDepartamento').val();
+                var selectedTramite = $('#selectTramite').val();
+    
+                // Ocultar todos los enlaces de documentos
+                $('.boton-descarga').hide();
+    
+                // Mostrar solo los enlaces correspondientes al departamento y trámite seleccionado
+                $('[data-departamento="' + selectedDepartamento + '"][data-tramite="' + selectedTramite + '"]').show();
+    
+                // Mostrar el contenedor de documentos solo si ambos selectores están seleccionados
+                if (selectedDepartamento && selectedTramite) {
+                    $('#documentosContainer').show();
+                } else {
+                    $('#documentosContainer').hide();
+                }
+            }
+        });
+    </script>
+    
+
+    
+
+</body>
+
+<footer>
+    <div>
+        <img class="qr" src="./assets/imgs/qr.jpeg" alt="">
+        <p class="copyright"> &copy; Cuilápam 2020-2024</p>
+    </div>
+    <div class="redes-container">
+        <p><b> Avenida Municipal, SN, Cuilápam de Guerrero, Oaxaca. CP: 71400</b></p>
+        <p><b>Teléfono:</b> (951) 695 19 68</p>
+        <p><b>Email:</b> ayuntamientocuilapam@gmail.com</p>
+        <p><b>Síguenos en nuestras redes sociales</b></p>
+        <br>
+        <p>Seguinos en nuestras redes</p>
+        <div class="redes">
+            <a target="_blank" href="https://www.facebook.com/CuilapamOficial">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+</html>
