@@ -66,7 +66,7 @@
                     </li>
                     <li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./#Tramites-y-servicios">Tramites y Servicios</a>
+                        <a class="nav-link" href="./tramite.html">Tramites y Servicios</a>
                     </li>
                     </li>
                     <li class="nav-item">
@@ -166,7 +166,7 @@
     <section id="contacto">
         <h2 data-aos="fade-right">Nos interesa su opinión</h2>
         <div class="row" id="form-container" data-aos="fade-up">
-            <form method="POST" class="col s12 gform" onsubmit="handleSubmit()">
+            <form action="https://formsubmit.co/ermacchavez172@gmail.com" method="POST" class="col s12 gform" onsubmit="handleSubmit()">
                 <div class="row">
                     <div class="input-field col s6">
                         <i class="material-icons prefix">account_circle</i>
@@ -196,11 +196,9 @@
                 <button id="submit-btn" class="btn waves-effect waves-light" type="submit" name="action">Enviar
                     <i class="material-icons right"></i>
                 </button>
-                <div style="display:none" class="thankyou_message">
-                    <!-- You can customize the thankyou message by editing the code below -->
-                    <p>Gracias por contactarte con nosotros! Te responderemos a la brevedad
-                    </p>
-                </div>
+                
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501">
+                <input type="hidden" name="_captcha" value="false">
             </form>
             
 
