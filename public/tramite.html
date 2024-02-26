@@ -239,6 +239,25 @@
     });
      </script>
 
+      <script>
+        // Obtener el elemento de fecha
+        var dateInput = document.getElementById('date');
+
+        // Función para verificar si la fecha seleccionada es un sábado o domingo
+        function validarFecha() {
+            var selectedDate = new Date(dateInput.value);
+            var dayOfWeek = selectedDate.getDay(); // 0 para domingo, 6 para sábado
+            
+            if (dayOfWeek === 5 || dayOfWeek === 6) {
+                alert('No se permiten selecciones de sábado o domingo.');
+                dateInput.value = ''; // Limpiar el valor del campo de fecha
+            }
+        }
+
+        // Agregar un evento de escucha para cuando cambie el valor del campo de fecha
+        dateInput.addEventListener('change', validarFecha);
+      </script>
+
         <script>
             const timeInput = document.getElementById('time');
             const timeError = document.getElementById('timeError');
