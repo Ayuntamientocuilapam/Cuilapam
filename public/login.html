@@ -7,6 +7,10 @@
 	<title>Iniciar Sesion</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="./my-login.css">
+	<script type="module" src="signup.js"></script>
+	<script type= "module" src="firebaseconect.js"></script>
+	<script type="module" src="login.js"></script>
+
 </head>
 
 <body class="my-login-page">
@@ -20,7 +24,7 @@
 					<div class="card fat">
 						<div class="card-body">
 							<h4 class="card-title">Iniciar Sesion</h4>
-							<form method="POST" class="my-login-validation" novalidate="">
+							<form id="formulario-sesion" method="POST" class="my-login-validation" novalidate="">
 								<div class="form-group">
 									<label for="email">Correo electronico</label>
 									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
@@ -42,6 +46,7 @@
 									<div class="custom-checkbox custom-control">
 										<input type="checkbox" name="remember" id="remember" class="custom-control-input">
 										<label for="remember" class="custom-control-label">Recuerdame</label>
+										
 									</div>
 								</div>
 
@@ -54,7 +59,7 @@
 								</div>
 								<script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js"></script>
   								<script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js"></script>
-  								<script src="applogin.js"></script> <!-- Enlaza tu archivo JavaScript -->
+  								
 
 								
 								
