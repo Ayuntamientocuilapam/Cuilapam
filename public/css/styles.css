@@ -56,6 +56,17 @@ body {
   color: #000;
 }
 
+.alert{
+  width: 100%;
+background: rgb;
+padding: 10px 20px;
+border-radius: 5px;
+text-align: center;
+font-size: 18px;
+font-weight: 900;
+display: none;
+}
+
 h2 {
   font-size: 3rem;
   letter-spacing: 1px;

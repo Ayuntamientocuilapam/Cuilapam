@@ -40,6 +40,13 @@
     
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js"></script>
+
+    
+
+
+ 
+
 </head>
 
 <body>
@@ -83,14 +90,16 @@
     <section class="section">
         <div class="row">
             <div class="col-lg-6">
+              
 
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">FORMULARIO DE CITAS</h5>
-                        
+                        <div class="alert">La cita se ha guardado correctamente.</div>
+
 
                         <!-- General Form Elements -->
-                        <form >
+                        <form action="" id="citasFormDB">
                             <div class="row mb-3">
                                 <label for="name" class="col-sm-2 col-form-label">Nombre</label>
                                 <div class="col-sm-10">
@@ -212,6 +221,10 @@
             </div>
         </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./tramitefire.js"></script>
+
 
         <script>
     document.addEventListener('DOMContentLoaded', function() {
