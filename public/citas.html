@@ -39,10 +39,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/cita.css"> 
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <script type="module" src="auth.js"></script>
-    <script type="module" src="login.js"></script>
-    <script type="module" src="signup.js"></script>
-    <script type= "module" src="firebaseconect.js"></script>
+    
+    
     <link rel="stylesheet" href="./css/citas.css">
     <link rel="stylesheet" href="./css/cabildostyl.css">
   </head>
@@ -112,7 +110,9 @@
                 
 
 
-                
+                <tbody id="citasTableBody">
+                  
+                </tbody>
               </table>
               <!-- End Table with stripped rows -->
 
@@ -124,12 +124,12 @@
     </section>
 
   </main><!-- End #main --> 
- 
-  <script src=".js/simple-datatables.js"></script>
-  <script src=".js/main.js"></script>
   
     
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  
+  <script src="displayCitas.js"></script>
 
 <footer>
     <div>
