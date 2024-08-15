@@ -11,10 +11,12 @@ const firebaseConfig = {
   
   };
   
-  firebase.initializeApp(firebaseConfig);
+ // Inicializar Firebase
+firebase.initializeApp(firebaseConfig);
 
+// Referencia a la base de datos de citas
+var citasFormDB = firebase.database().ref("citasFormDB");
 
-  var citasFormDB = firebase.database().ref("citasFormDB");
 // Función para visualizar las citas
 const displayCitas = () => {
     var citasTableBody = document.getElementById('citasTableBody');
@@ -24,6 +26,7 @@ const displayCitas = () => {
         let count = 1;
         snapshot.forEach((childSnapshot) => {
             var childData = childSnapshot.val();
+            var childKey = childSnapshot.key; // Obtener la clave de cada cita
 
             var row = document.createElement('tr');
 
@@ -36,6 +39,9 @@ const displayCitas = () => {
                 <td>${childData.hora}</td>
                 <td>${childData.departamento}</td>
                 <td>${childData.tramite}</td>
+                <td>
+                    <button class="btn btn-danger btn-sm" onclick="eliminarCita('${childKey}')">Eliminar</button>
+                </td>
             `;
 
             citasTableBody.appendChild(row);
@@ -43,5 +49,21 @@ const displayCitas = () => {
     });
 };
 
+// Función para eliminar una cita
+const eliminarCita = (id) => {
+    if (confirm('¿Estás seguro de que deseas eliminar esta cita?')) {
+        // Eliminar la cita de la base de datos usando la clave
+        citasFormDB.child(id).remove()
+            .then(() => {
+                alert('Cita eliminada exitosamente.');
+                displayCitas(); // Recargar la tabla de citas
+            })
+            .catch((error) => {
+                console.error('Error al eliminar la cita:', error);
+            });
+    }
+};
+
 // Llamar a displayCitas cuando se cargue la página
 window.onload = displayCitas;
+

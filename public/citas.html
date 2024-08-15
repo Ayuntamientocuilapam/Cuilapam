@@ -78,53 +78,50 @@
     
    
    
-  <main id="main" class="main">
+    <main id="main" class="main">
 
-    <div class="pagetitle">
-      <h1>Tabla de Citas</h1>
-    </div><!-- End Page Title -->
-
-    <section class="section">
-      <div class="row">
-        <div class="col-lg-12">
-
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Citas</h5>
-              
-              <!-- Table with stripped rows -->
-              <table class="table datatable">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Correo</th>
-                    <th scope="col">Numero</th>
-                    <th scope="col">Fecha</th>
-                    <th scope="col">Hora</th>
-                    <th scope="col">Departamento</th>
-                    <th scope="col">Tramite o servicios</th>
-                  </tr>
-                </thead>
-
-                
-
-
-                <tbody id="citasTableBody">
-                  
-                </tbody>
-              </table>
-              <!-- End Table with stripped rows -->
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-  </main><!-- End #main --> 
+      <div class="pagetitle">
+          <h1>Tabla de Citas</h1>
+      </div><!-- End Page Title -->
   
+      <section class="section">
+          <div class="row">
+              <div class="col-lg-12">
+  
+                  <div class="card">
+                      <div class="card-body">
+                          <h5 class="card-title">Citas</h5>
+  
+                          <!-- Table with stripped rows -->
+                          <table class="table datatable">
+                              <thead>
+                                  <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">Nombre</th>
+                                      <th scope="col">Correo</th>
+                                      <th scope="col">Número</th>
+                                      <th scope="col">Fecha</th>
+                                      <th scope="col">Hora</th>
+                                      <th scope="col">Departamento</th>
+                                      <th scope="col">Trámite o servicios</th>
+                                      <th scope="col">Acciones</th> <!-- Nueva columna para el botón de eliminar -->
+                                  </tr>
+                              </thead>
+  
+                              <tbody id="citasTableBody">
+                                  <!-- Aquí se generarán las filas de las citas con botones para eliminar -->
+                              </tbody>
+                          </table>
+                          <!-- End Table with stripped rows -->
+  
+                      </div>
+                  </div>
+  
+              </div>
+          </div>
+      </section>
+  
+  </main><!-- End #main -->
     
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
