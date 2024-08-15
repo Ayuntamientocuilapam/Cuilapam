@@ -17,44 +17,53 @@
       document.getElementById("citasFormDB").addEventListener("submit", submitForm);
     // Evita que el formulario se envíe normalmente
 
-    function submitForm(e){ 
+    function submitForm(e) { 
         e.preventDefault();
-         // Obtener los valores del formulario
-         var name = getElementVal("name");
-         var correo = getElementVal('email');
-         var numero = getElementVal('number');
-         var fecha = getElementVal('date');
-         var hora = getElementVal('time');
-         var departamento = getElementVal('selectDepartamento');
-         var tramite = getElementVal('selectTramite');
-
-         saveMessages(name, correo, numero, fecha, hora, departamento, tramite);
-
-
-         document.querySelector(".alert").style.display ="block";
-         
-         setTimeout(() =>{
-            document.querySelector(".alert").style.display ="none";
-         }, 3000);
-
-         document.getElementById("citasFormDB").reset();
-         }
-
-    const saveMessages = (name, email, number, date, time, selectDepartamento, selectTramite) =>{
+    
+        // Obtener los valores del formulario
+        var name = getElementVal("name");
+        var correo = getElementVal("email");
+        var numero = getElementVal("number");
+        var fecha = getElementVal("date");
+        var hora = getElementVal("time");
+    
+        // Obtener el texto del departamento y trámite seleccionados
+        var departamentoSelect = document.getElementById("selectDepartamento");
+        var departamento = departamentoSelect.options[departamentoSelect.selectedIndex].text;
+    
+        var tramiteSelect = document.getElementById("selectTramite");
+        var tramite = tramiteSelect.options[tramiteSelect.selectedIndex].text;
+    
+        saveMessages(name, correo, numero, fecha, hora, departamento, tramite);
+    
+        // Mostrar alerta de éxito
+        document.querySelector(".alert").style.display = "block";
+        
+        // Ocultar la alerta después de 3 segundos
+        setTimeout(() => {
+            document.querySelector(".alert").style.display = "none";
+        }, 3000);
+    
+        // Reiniciar el formulario
+        document.getElementById("citasFormDB").reset();
+    }
+    
+    const saveMessages = (name, email, number, date, time, departamento, tramite) => {
         var newCitasForm = citasFormDB.push();
-
+    
         newCitasForm.set({
             nombre: name,
             correo: email,
             numero: number,
             fecha: date,
             hora: time,
-            departamento: selectDepartamento,
-            tramite: selectTramite,
-        })
+            departamento: departamento,
+            tramite: tramite,
+        });
     };
     
-    const getElementVal =(id) =>{
+    const getElementVal = (id) => {
         return document.getElementById(id).value;
     };
+    
        
